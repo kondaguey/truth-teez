@@ -1,0 +1,23 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.navbar-brand {
+  img{
+    width: 125px;
+    position: relative;
+  }
+}
+ 
+.menu {
+  @include bg-gradient();
+  li {
+    padding: 0 1rem;
+    a {
+      color: $white !important;
+      text-transform: lowercase;
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+  }
+}
+

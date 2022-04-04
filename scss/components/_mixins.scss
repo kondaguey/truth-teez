@@ -1,0 +1,6 @@
+@use '../custom' as *;
+
+@mixin bg-gradient(){
+  background: $primary;
+  background: linear-gradient(10deg, $primary 33%, $secondary 66%);
+}
